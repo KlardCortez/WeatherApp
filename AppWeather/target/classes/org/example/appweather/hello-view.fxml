@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1"
+      spacing="20" alignment="TOP_CENTER" prefWidth="360" prefHeight="640"
+      style="-fx-background-color: linear-gradient(to bottom, #a1c4fd, #c2e9fb); -fx-padding: 30px;">
+
+  <Label text="Weather App"
+         style="-fx-font-size: 28px; -fx-text-fill: #ffffff; -fx-font-weight: bold;" />
+
+  <TextField fx:id="tf_city" promptText="Enter city name"
+             maxWidth="280"
+             style="-fx-font-size: 14px; -fx-padding: 10px; -fx-background-radius: 8; -fx-background-color: #ffffff;" />
+
+  <Button fx:id="btn_search" text="Search"
+          maxWidth="200"
+          style="-fx-font-size: 14px; -fx-background-color: #4fc3f7; -fx-text-fill: white; -fx-background-radius: 20;" />
+
+  <VBox spacing="12" alignment="CENTER">
+    <HBox spacing="10" alignment="CENTER">
+      <Label text="Temperature:" style="-fx-font-size: 16px; -fx-text-fill: #ffffff;" />
+      <Label fx:id="lb_temperatureValue" text="-- °C" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #ffffff;" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+      <Label text="Humidity:" style="-fx-font-size: 16px; -fx-text-fill: #ffffff;" />
+      <Label fx:id="lb_humidityValue" text="-- %" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #ffffff;" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+      <Label text="Wind Speed:" style="-fx-font-size: 16px; -fx-text-fill: #ffffff;" />
+      <Label fx:id="lb_windSpeedValue" text="-- m/s" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #ffffff;" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+      <Label text="State:" style="-fx-font-size: 16px; -fx-text-fill: #ffffff;" />
+      <Label fx:id="lb_weatherStateValue" text="--" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #ffffff;" />
+    </HBox>
+  </VBox>
+
+  <Button fx:id="btn_history" text="View History"
+          maxWidth="200"
+          style="-fx-font-size: 14px; -fx-background-color: #81d4fa; -fx-text-fill: white; -fx-background-radius: 20;" />
+
+  <Label text="Powered by OpenWeather API"
+         style="-fx-font-size: 10px; -fx-text-fill: #e0f7fa;"
+         alignment="CENTER"/>
+</VBox>

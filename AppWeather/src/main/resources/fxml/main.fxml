@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.appweather.HelloController"
+      spacing="15" padding="20" alignment="TOP_CENTER">
+
+    <Label text="Weather Application" style="-fx-font-size: 28; -fx-font-family: 'Times New Roman';" />
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Enter city name:" style="-fx-font-size: 18;" />
+        <TextField fx:id="tf_city" promptText="Enter city name" prefWidth="180"/>
+        <Button text="Search" onAction="#searchBTN" />
+    </HBox>
+
+    <VBox spacing="10" alignment="CENTER_LEFT">
+        <HBox spacing="10">
+            <Label text="Temperature:" style="-fx-font-size: 20;" />
+            <Label fx:id="lb_temperatureValue" style="-fx-font-size: 20;" />
+        </HBox>
+        <HBox spacing="10">
+            <Label text="Humidity:" style="-fx-font-size: 20;" />
+            <Label fx:id="lb_humidityValue" style="-fx-font-size: 20;" />
+        </HBox>
+        <HBox spacing="10">
+            <Label text="Wind Speed:" style="-fx-font-size: 20;" />
+            <Label fx:id="lb_windSpeedValue" style="-fx-font-size: 20;" />
+        </HBox>
+        <HBox spacing="10">
+            <Label text="Weather State:" style="-fx-font-size: 20;" />
+            <Label fx:id="lb_weatherStateValue" style="-fx-font-size: 20;" />
+        </HBox>
+    </VBox>
+
+    <Button text="History Search" onAction="#historyBTN" maxWidth="200" />
+</VBox>
